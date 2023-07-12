@@ -1,0 +1,396 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Calibri;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.search-box {
+    width: 796px;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 0 2px 0 black;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: 4px;
+}
+
+.search-box .home {
+    position: absolute;
+    right: 100px;
+    color: black;
+    font-size: 28px;
+}
+
+.search-box .print {
+    position: absolute;
+    right: 60px;
+    color: black;
+    font-size: 28px;
+}
+
+.search-box .logout {
+    position: absolute;
+    right: 20px;
+    color: black;
+    font-size: 26px;
+}
+
+.search-box .home:hover {
+    color: green;
+}
+
+.search-box .print:hover {
+    color: orange;
+}
+
+.search-box .logout:hover {
+    color: red;
+}
+
+.page {
+    width: 8.27in;
+    height: 5.8in;
+    border: 1px solid black;
+    margin: 10px auto;
+    position: relative;
+}
+
+.page .header {
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding: 4px;
+    font-size: 9pt;
+}
+
+.page .body {
+    padding: 2px 6px;
+    position: relative;
+}
+
+.serial {
+    font-size: 6pt;
+    text-align: right;
+}
+
+.serial-number {
+    font-size: 5pt;
+    text-align: right;
+}
+
+.page .body .title {
+    font-size: 9pt;
+    font-weight: bold;
+    text-align: center;
+}
+
+.page .body .date {
+    text-align: right;
+    font-size: 9pt;
+    margin-right: 30px;
+    font-weight: bold;
+}
+
+.page .body .date span {
+    width: 200px;
+    border-bottom: 1px solid #000;
+    padding-left: 50px;
+    text-align: left;
+    font-weight: normal;
+    padding-right: 50px;
+    margin-left: 30px;
+    font-size: 8pt;
+}
+
+.page .forms {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.page .forms .title {
+    width: 40%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.page .forms .title .header {
+    font-size: 9pt;
+    font-weight: bold;
+    border: none;
+}
+
+.page .forms .title .value {
+    font-size: 8pt;
+    border-bottom: 1px solid #000;
+    width: 100%;
+    text-align: left;
+    text-indent: 10px;
+    font-weight: normal;
+}
+
+.page .forms .age {
+    width: 10%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+}
+
+.page .forms .age .header {
+    font-size: 9pt;
+    font-weight: bold;
+    border: none;
+}
+
+.page .forms .age .value {
+    font-size: 8pt;
+    border-bottom: 1px solid #000;
+    width: 100%;
+    text-align: left;
+    text-indent: 10px;
+}
+
+.page .forms .sex {
+    width: 20%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.page .forms .sex .header {
+    font-size: 9pt;
+    font-weight: bold;
+    border: none;
+}
+
+.page .forms .sex input {
+    margin-left: 20px;
+    margin-right: 3px;
+}
+
+.page .forms .address {
+    width: 80%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.page .forms .address .header {
+    font-size: 9pt;
+    font-weight: bold;
+    border: none;
+    width: auto;
+}
+
+.page .forms .address .value {
+    font-size: 8pt;
+    border-bottom: 1px solid #000;
+    width: 500px;
+    text-align: left;
+    text-indent: 10px;
+    font-weight: normal;
+}
+
+.page .forms .number {
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.page .forms .number .header {
+    font-size: 9pt;
+    font-weight: bold;
+    border: none;
+    width: auto;
+}
+
+.page .forms .number .value {
+    font-size: 8pt;
+    border-bottom: 1px solid #000;
+    width: 200px;
+    text-align: left;
+    text-indent: 10px;
+    font-weight: normal;
+}
+
+.page .forms .email {
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.page .forms .email .header {
+    font-size: 9pt;
+    font-weight: bold;
+    border: none;
+    width: auto;
+    margin-left: -96px;
+}
+
+.page .forms .email .value {
+    font-size: 8pt;
+    border-bottom: 1px solid #000;
+    width: 234px;
+    text-align: left;
+    text-indent: 10px;
+    font-weight: normal;
+}
+
+.page .body .note {
+    font-size: 9pt;
+    font-weight: bolder;
+    padding: 5px;
+    padding-bottom: 10px;
+}
+
+.page .body .check-form {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    position: relative;
+    font-size: 11pt;
+    font-weight: bold;
+}
+
+.page .body .check-form .line1,
+.page .body .check-form .line2,
+.page .body .check-form .line3,
+.line4,
+.line5 {
+    width: 50px;
+    height: 20px;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+.page .body .check-form .line3 {
+    position: absolute;
+    right: 160px;
+}
+
+.page .body .check-form .emj3 {
+    position: absolute;
+    right: 140px;
+}
+
+.page .body .check-form .line2 {
+    position: absolute;
+    right: 260px;
+}
+
+.page .body .check-form .emj2 {
+    position: absolute;
+    right: 240px;
+}
+
+.page .body .check-form .line1 {
+    position: absolute;
+    right: 360px;
+}
+
+.page .body .check-form .emj1 {
+    position: absolute;
+    right: 340px;
+}
+
+.page .body .last {
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+.emj4 {
+    margin-left: 20px;
+}
+
+.emj5 {
+    margin-left: 10px;
+}
+
+.comment-note {
+    font-size: 9pt;
+    font-weight: bolder;
+    padding: 5px;
+    padding-bottom: 10px;
+}
+
+.comment {
+    font-size: 9pt;
+    padding: 5px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+    min-height: 40px;
+    line-height: 15px;
+    margin-top: -5px;
+}
+
+li {
+    font-size: 7pt;
+    padding: 5px;
+    padding-bottom: 10px;
+    line-height: 15px;
+    font-weight: bold;
+}
+
+.lagda {
+    width: 200px;
+    border-bottom: 1px solid #000;
+    height: 50px;
+    position: absolute;
+    right: 20px;
+    bottom: -20px;
+}
+
+.lagda::after {
+    content: "Lagda";
+    position: absolute;
+    left: 80px;
+    bottom: -20px;
+    font-size: 9pt;
+    font-weight: bold;
+}
+
+.lagda img {
+    width: 200px;
+    height: 40px;
+    transform: translateY(20px);
+}
+
+.thanks {
+    position: absolute;
+    bottom: 5px;
+    left: 6px;
+    font-size: 9pt;
+    font-weight: bolder;
+}
+
+@page {
+    size: auto;
+    margin: 27mm 16mm 27mm 16mm;
+}
+
+button {
+    padding: 12px 30px;
+    border: none;
+    outline: none;
+    background-color: blue;
+    color: white;
+    margin: 10px auto;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
